@@ -1,0 +1,78 @@
+header{
+  height: 50px;
+  background: linear-gradient(90deg, pink 0%, rgb(240, 240, 240) 100%);
+  color: rgb(54, 92, 124);
+  line height: 50px;
+  font-size: 30pts;
+  
+}
+
+footer{
+  height: 30px;
+  line-height: 30px;
+  font-size: 10pt;
+  color: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgb(242, 167, 222) 0%, pink 100%);
+  text-align: center;
+}
+
+section{
+  height:calc(100% - 80px);
+  overflow: auto;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+nav .logo{
+  font-size: 20pt;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  margin: 1%;
+  padding: 0%;
+  background: whitesmoke;
+  width: 100%;
+}
+
+nav ul li{
+  margin: 0 15px;
+}
+
+nav .menu{
+  margin-top: 0.5%;
+  margin-right: 15px;
+  font-size: 20pt;
+  display: none;
+}
+
+/*Responsible for web responsiveness*/
+@media(max-width:768px)
+{
+  nav .menu{
+    display: block;
+  }
+  nav ul{
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+  }
+  nav ul.active{
+    display: block;
+  }
+  nav ul li{
+    background: linear-gradient(90deg, whitesmoke 0%, white 100%);
+    /*margin-top: 2px;*/
+    padding: 0;
+    margin: 2px 0 0 0;
+  }
+}

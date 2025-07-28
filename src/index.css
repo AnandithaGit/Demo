@@ -1,0 +1,11 @@
+html, body{
+  margin: 0;
+  height: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: rgb(238, 232, 232);
+}
+
+#root{
+  height: 100%;
+  
+}
